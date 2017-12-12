@@ -44,6 +44,8 @@ Some specific points of curation which will be needed include:
 - unit handling; values are present in kJ/mol and kcal/mol
 - checking of molecule names against SMILES and stereochemistry; I (DLM) previously gave Peter some tools to help with this but I do not know if he has used them
 
+See also [`usage_notes.md`](usage_notes.md) for some information which relates to the contents.
+
 ## Manifest
 - `GuthrieDatabase_April14.zip`: Guthrie database (Excel spreadsheet) as it was provided
 - `guthrie_database.csv`: Exported csv file of main tab of Excel spreadsheet
@@ -77,4 +79,4 @@ to load the database and extract all data with a molecule named phenol
 
 ## Versions
 
-- Version 0.01 ([10.5281/zenodo.1101258](http://dx.doi.org/10.5281/zenodo.1101258)): Provides initial files. 
+- Version 0.01 ([10.5281/zenodo.1101258](http://dx.doi.org/10.5281/zenodo.1101258)): Provides initial files.
