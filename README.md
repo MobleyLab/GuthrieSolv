@@ -37,8 +37,28 @@ Our hope is that the community will get involved with curation of the dataset pr
 Suggested improvements should come in via pull requests, where each pull request provides proposed modifications (including potentially supporting tools/scripts, data, references, or links to the same) and a clear explanation of these changes.
 Thus, over time the current, curated database is expected to move away from simply reflecting the contents of the Excel spreadsheet and become more valuable.
 
+Some specific points of curation which will be needed include:
+- Separation of different types of data; for example, the main tab in the database Excel spreadsheet (and the data in `guthrie_database.csv`) contains not just hydration free energies but other properties with other units, e.g. the entries for phenol include values reported in mg/L, g/m^3, etc.
+- unit handling; values are present in kJ/mol and kcal/mol
+- checking of molecule names against SMILES and stereochemistry; I (DLM) previously gave Peter some tools to help with this but I do not know if he has used them
+
 ## Manifest
 - `GuthrieDatabase_April14.zip`: Guthrie database (Excel spreadsheet) as it was provided
+- `guthrie_database.csv`: Exported csv file of main tab of Excel spreadsheet
+- `guthrie_references_and_status.csv`: Additional tab of Excel spreadsheet which provides definitions of the references and reports on Peter's progress in extracting data from those references; may highlight other areas where more data is still available
+
+There is also data/curation work in an additional tab of the spreadsheet, Sheet 2, which may be useful but is not present here as a separate file yet.
+
+## Using the dataset
+
+The data set can be loaded easily in Python using `pandas`, for example as:
+```
+python
+import pandas
+db = pandas.read_csv('guthrie_database.csv', encoding='latin1')
+data = db[db.Name=='phenol']
+```
+to load the database and extract all data with a molecule named phenol
 
 ## Authors
 ### Primary author
@@ -46,6 +66,7 @@ Thus, over time the current, curated database is expected to move away from simp
 
 ### Other contributors
 - David L. Mobley, UC Irvine, who maintains this repository
+- Probably students and others who worked with Dr. Guthrie over the years, but I (DLM) do not have their information
 
 ## Acknowledgments
 - James Guthrie, who made this data available and gave permission to post it publicly; he does not want any credit for this, but he should certainly be acknowledged.
