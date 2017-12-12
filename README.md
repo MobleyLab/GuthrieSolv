@@ -3,6 +3,8 @@
 This repository provides access to the late J. Peter Guthrie's small molecule hydration free energy database, which was donated posthumously to the community.
 If you are interested in using the data provided here, please read the relevant [background information and disclaimers](#background-information-and-disclaimers) below and consider contributing to [curation of the dataset](#curation-of-the-dataset).
 
+[![DOI](https://zenodo.org/badge/113920871.svg)](https://zenodo.org/badge/latestdoi/113920871)
+
 ## Background information and disclaimers
 
 ### Death of the primary author
@@ -72,3 +74,7 @@ to load the database and extract all data with a molecule named phenol
 - James Guthrie, who made this data available and gave permission to post it publicly; he does not want any credit for this, but he should certainly be acknowledged.
 
 (To be updated as people contribute)
+
+## Versions
+
+- Version 0.01 ([10.5281/zenodo.1101258](http://dx.doi.org/10.5281/zenodo.1101258)): Provides initial files. 
