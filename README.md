@@ -72,6 +72,11 @@ to load the database and extract all data with a molecule named phenol
 - David L. Mobley, UC Irvine, who maintains this repository
 - Probably students and others who worked with Dr. Guthrie over the years, but I (DLM) do not have their information
 
+## Citing this work
+Please cite this GitHub repository, as well as "The Guthrie Hydration Free Energy Database of Experimental Small Molecule Hydration Free Energies," J. Peter Guthrie and David L. Mobley, eScholarship, [https://escholarship.org/uc/item/53n2h10t](https://escholarship.org/uc/item/53n2h10t). 
+
+We maintain archival copies of this repository on eScholarship, administered by the University of California, in order to ensure long term access. New versions will also be posted there.
+
 ## Acknowledgments
 - James Guthrie, who made this data available and gave permission to post it publicly; he does not want any credit for this, but he should certainly be acknowledged.
 
