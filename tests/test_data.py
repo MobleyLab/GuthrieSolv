@@ -27,18 +27,20 @@ class TestData(unittest.TestCase):
     def test_smiles(self):
         """Test all SMILES can be parsed."""
         dd = defaultdict(list)
+        names = {}
         missing = []
-        for idx, smiles in self.df["mol"].items():
+        for idx, (smiles, name) in self.df[["mol", "Name"]].iterrows():
             if pd.isna(smiles):
                 missing.append(idx)
             else:
                 dd[smiles].append(idx)
+                names[smiles] = name
 
         with self.subTest(smiles="MISSING"):
             self.assertEqual(0, len(missing), msg=f"Lines missing SMILES: {missing}")
 
         for smiles, lines in sorted(dd.items()):
-            with self.subTest(smiles=smiles):
+            with self.subTest(name=names[smiles], smiles=smiles):
                 self.assertIsInstance(smiles, str)
                 mol = MolFromSmiles(smiles)
                 self.assertIsNotNone(mol, msg=f"Unable to parse SMILES on rows: {lines}")
