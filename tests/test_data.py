@@ -28,16 +28,17 @@ class TestData(unittest.TestCase):
         """Test all SMILES can be parsed."""
         dd = defaultdict(list)
         names = {}
-        missing = []
+        missing = {}
         for idx, (smiles, name) in self.df[["mol", "Name"]].iterrows():
             if pd.isna(smiles):
-                missing.append(idx)
+                missing[idx] = name
             else:
                 dd[smiles].append(idx)
                 names[smiles] = name
 
-        with self.subTest(smiles="MISSING"):
-            self.assertEqual(0, len(missing), msg=f"Lines missing SMILES: {missing}")
+        for idx, name in sorted(missing.items()):
+            with self.subTest(name=name, smiles="MISSING", line=idx):
+                self.fail(msg=f"Lines missing SMILES: {missing}")
 
         for smiles, lines in sorted(dd.items()):
             with self.subTest(name=names[smiles], smiles=smiles):
