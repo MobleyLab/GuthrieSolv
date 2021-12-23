@@ -45,4 +45,6 @@ class TestData(unittest.TestCase):
             with self.subTest(name=names[smiles].strip(), smiles=smiles):
                 self.assertIsInstance(smiles, str)
                 mol = MolFromSmiles(smiles)
-                self.assertIsNotNone(mol, msg=f"Bad smiles for {names[smiles].strip()} on rows: {lines}")
+                self.assertIsNotNone(
+                    mol, msg=f"Bad smiles for {names[smiles].strip()} on rows: {lines}"
+                )
