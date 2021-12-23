@@ -64,6 +64,18 @@ data = db[db.Name=='phenol']
 ```
 to load the database and extract all data with a molecule named phenol
 
+## Maintenance
+
+This repository has data quality assurance tests implemented in Python that
+can be run with `tox` using the following commands:
+
+```shell
+$ git clone git@github.com:MobleyLab/GuthrieSolv.git
+$ cd GuthrieSolv
+$ pip install tox
+$ tox
+```
+
 ## Authors
 ### Primary author
 - J. Peter Guthrie (University of Western Ontario)
