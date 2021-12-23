@@ -30,18 +30,19 @@ class TestData(unittest.TestCase):
         names = {}
         missing = {}
         for idx, (smiles, name) in self.df[["mol", "Name"]].iterrows():
+            file_idx = idx + 2
             if pd.isna(smiles):
-                missing[idx] = name
+                missing[file_idx] = name
             else:
-                dd[smiles].append(idx)
+                dd[smiles].append(file_idx)
                 names[smiles] = name
 
-        for idx, name in sorted(missing.items()):
-            with self.subTest(name=name, smiles="MISSING", line=idx):
+        for file_idx, name in sorted(missing.items()):
+            with self.subTest(name=name, smiles="MISSING", line=file_idx):
                 self.fail(msg=f"Lines missing SMILES: {missing}")
 
         for smiles, lines in sorted(dd.items()):
-            with self.subTest(name=names[smiles], smiles=smiles):
+            with self.subTest(name=names[smiles].strip(), smiles=smiles):
                 self.assertIsInstance(smiles, str)
                 mol = MolFromSmiles(smiles)
-                self.assertIsNotNone(mol, msg=f"Unable to parse SMILES on rows: {lines}")
+                self.assertIsNotNone(mol, msg=f"Bad smiles for {names[smiles].strip()} on rows: {lines}")
