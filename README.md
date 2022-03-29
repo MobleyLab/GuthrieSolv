@@ -81,8 +81,12 @@ $ tox
 - J. Peter Guthrie (University of Western Ontario)
 
 ### Other contributors
-- David L. Mobley, UC Irvine, who maintains this repository
+- David L. Mobley, UC Irvine, who maintains this repository with help from the community
+- Chris Hoyt, who helped with CI and data integrity tests
 - Probably students and others who worked with Dr. Guthrie over the years, but I (DLM) do not have their information
+
+## Changelog
+- 2021-12-20: Added CI testing to ensure SMILES are non-null and parseable; add code quality checks; use GitHub actions to ensure tests run/continue working/etc.
 
 ## Citing this work
 Please cite this GitHub repository, as well as "The Guthrie Hydration Free Energy Database of Experimental Small Molecule Hydration Free Energies," J. Peter Guthrie and David L. Mobley, eScholarship, [https://escholarship.org/uc/item/53n2h10t](https://escholarship.org/uc/item/53n2h10t). 
