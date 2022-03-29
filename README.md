@@ -82,7 +82,7 @@ $ tox
 
 ### Other contributors
 - David L. Mobley, UC Irvine, who maintains this repository with help from the community
-- Chris Hoyt, who helped with CI and data integrity tests
+- Charles T. Hoyt, who helped with CI and data integrity tests
 - Probably students and others who worked with Dr. Guthrie over the years, but I (DLM) do not have their information
 
 ## Changelog
