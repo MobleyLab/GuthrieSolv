@@ -1,0 +1,31 @@
+{
+  "n_rows_total": 53895,
+  "n_observations_converted": 16357,
+  "n_molecules": 2675,
+  "n_clipped_unphysical": 0,
+  "route_counts": {
+    "FEOH_DGS": 3160,
+    "henry": 11475,
+    "vp": 20524,
+    "aqsol": 15531,
+    "unconverted": 569,
+    "excluded_process": 2635,
+    "no_mol": 0
+  },
+  "obs_route_counts": {
+    "henry": 11475,
+    "free_energy": 3160,
+    "vp_sol_pair": 1722
+  },
+  "molecules_with_ge2_obs": 1646,
+  "molecules_with_ge3_obs": 1128,
+  "n_vp_molecules": 2472,
+  "n_sol_molecules": 3388,
+  "n_paired_molecules": 1722,
+  "dg_hyd_stats": {
+    "min": -47.74863924156327,
+    "median": -2.7284936709464724,
+    "max": 8.650772223468023,
+    "mean": -2.8973093318135303
+  }
+}

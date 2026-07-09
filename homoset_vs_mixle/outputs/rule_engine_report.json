@@ -1,0 +1,52 @@
+{
+  "rule_engine": {
+    "obs": 16469,
+    "molecules": 2677,
+    "paired": 1727,
+    "units_converted": 65,
+    "freesolv": {
+      "n": 561,
+      "MAE": 0.275,
+      "R": 0.972
+    }
+  },
+  "switchboard": {
+    "obs": 16357,
+    "molecules": 2675,
+    "units_converted": 57
+  },
+  "new_units_gained": [
+    {
+      "unit": "Pa/M",
+      "process": "KWG"
+    },
+    {
+      "unit": "Torr/M",
+      "process": "KWG"
+    },
+    {
+      "unit": "[mf/mf]And",
+      "process": "KWG"
+    },
+    {
+      "unit": "atm/M",
+      "process": "KWG"
+    },
+    {
+      "unit": "g/L/atm",
+      "process": "KGW"
+    },
+    {
+      "unit": "kPa/M",
+      "process": "KWG"
+    },
+    {
+      "unit": "log(atm/M)",
+      "process": "KWG"
+    },
+    {
+      "unit": "mm Hg/M",
+      "process": "KWG"
+    }
+  ]
+}

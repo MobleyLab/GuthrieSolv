@@ -1,0 +1,276 @@
+{
+  "params": {
+    "MIN_ANCHORS": 6,
+    "R_MIN": 0.85,
+    "eta": 0.35
+  },
+  "n_units_calibrated": 22,
+  "rounds": [
+    {
+      "round": 1,
+      "units_added": 21,
+      "obs_so_far": 5058,
+      "molecules_so_far": 1249
+    },
+    {
+      "round": 2,
+      "units_added": 1,
+      "obs_so_far": 5244,
+      "molecules_so_far": 1261
+    }
+  ],
+  "physics_molecules": 2473,
+  "loop_new_molecules": 268,
+  "total_molecules_after_loop": 2741,
+  "loop_observations": 5244,
+  "freesolv_heldout_newmolecules": {
+    "n": 5,
+    "MAE": 1.9957834602134006,
+    "R": 0.8748454041096908
+  },
+  "calibrated_units": [
+    {
+      "unit": "log(M/M)",
+      "process": "KGW",
+      "transform": "identity",
+      "a": -1.3363,
+      "b": -0.023,
+      "R": -0.995,
+      "noise_RMS_over_L": 0.029,
+      "n_anchors": 2219,
+      "confidence": "high"
+    },
+    {
+      "unit": "log(M/M)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.3455,
+      "b": 0.0086,
+      "R": 0.996,
+      "noise_RMS_over_L": 0.026,
+      "n_anchors": 1064,
+      "confidence": "high"
+    },
+    {
+      "unit": "ppm (mol)",
+      "process": "AQSOL",
+      "transform": "log10",
+      "a": -1.2246,
+      "b": 2.0469,
+      "R": -0.856,
+      "noise_RMS_over_L": 0.134,
+      "n_anchors": 331,
+      "confidence": "medium"
+    },
+    {
+      "unit": "log(mmHg)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 1.2417,
+      "b": -1.2781,
+      "R": 0.859,
+      "noise_RMS_over_L": 0.202,
+      "n_anchors": 156,
+      "confidence": "medium"
+    },
+    {
+      "unit": "[mf]",
+      "process": "AQSOL",
+      "transform": "log10",
+      "a": -3.0431,
+      "b": -17.0984,
+      "R": -0.947,
+      "noise_RMS_over_L": 0.049,
+      "n_anchors": 118,
+      "confidence": "medium"
+    },
+    {
+      "unit": "log((atm m3)/mol)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.3377,
+      "b": 2.1221,
+      "R": 0.995,
+      "noise_RMS_over_L": 0.028,
+      "n_anchors": 86,
+      "confidence": "high"
+    },
+    {
+      "unit": "log(atm/mf)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.6965,
+      "b": -5.522,
+      "R": 0.918,
+      "noise_RMS_over_L": 0.202,
+      "n_anchors": 79,
+      "confidence": "medium"
+    },
+    {
+      "unit": "[log(molar/molar)]",
+      "process": "KGW",
+      "transform": "identity",
+      "a": -1.2863,
+      "b": -0.0767,
+      "R": -0.992,
+      "noise_RMS_over_L": 0.047,
+      "n_anchors": 73,
+      "confidence": "high"
+    },
+    {
+      "unit": "logK=y/x at 1 atm",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.3308,
+      "b": -4.2558,
+      "R": 0.993,
+      "noise_RMS_over_L": 0.05,
+      "n_anchors": 65,
+      "confidence": "high"
+    },
+    {
+      "unit": "MPv/(RTCw)",
+      "process": "KWG",
+      "transform": "ln",
+      "a": 0.5957,
+      "b": 0.1606,
+      "R": 0.993,
+      "noise_RMS_over_L": 0.044,
+      "n_anchors": 55,
+      "confidence": "high"
+    },
+    {
+      "unit": "log(Pa)",
+      "process": "VP",
+      "transform": "log10",
+      "a": 5.6485,
+      "b": -3.3332,
+      "R": 0.85,
+      "noise_RMS_over_L": 0.171,
+      "n_anchors": 37,
+      "confidence": "medium"
+    },
+    {
+      "unit": "log((Pa L)/mol)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.3597,
+      "b": -8.6937,
+      "R": 1.0,
+      "noise_RMS_over_L": 0.014,
+      "n_anchors": 25,
+      "confidence": "high"
+    },
+    {
+      "unit": "log(atm/M)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.0314,
+      "b": -1.4076,
+      "R": 0.958,
+      "noise_RMS_over_L": 0.095,
+      "n_anchors": 24,
+      "confidence": "high"
+    },
+    {
+      "unit": "mm Hg/M",
+      "process": "KWG",
+      "transform": "ln",
+      "a": 0.5992,
+      "b": -5.749,
+      "R": 0.999,
+      "noise_RMS_over_L": 0.004,
+      "n_anchors": 24,
+      "confidence": "high"
+    },
+    {
+      "unit": "kPa/M",
+      "process": "KWG",
+      "transform": "ln",
+      "a": 0.6096,
+      "b": -4.7238,
+      "R": 0.996,
+      "noise_RMS_over_L": 0.046,
+      "n_anchors": 22,
+      "confidence": "high"
+    },
+    {
+      "unit": "log((Pa m3)/mol)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.0418,
+      "b": -3.7549,
+      "R": 0.991,
+      "noise_RMS_over_L": 0.033,
+      "n_anchors": 16,
+      "confidence": "high"
+    },
+    {
+      "unit": "[mf/mf]And",
+      "process": "KWG",
+      "transform": "ln",
+      "a": 0.5919,
+      "b": -6.3275,
+      "R": 1.0,
+      "noise_RMS_over_L": 0.004,
+      "n_anchors": 12,
+      "confidence": "high"
+    },
+    {
+      "unit": "microM",
+      "process": "AQSOL",
+      "transform": "ln",
+      "a": -0.6728,
+      "b": -2.4014,
+      "R": -0.969,
+      "noise_RMS_over_L": 0.091,
+      "n_anchors": 11,
+      "confidence": "medium"
+    },
+    {
+      "unit": "g/100g/atm",
+      "process": "KGW",
+      "transform": "log10",
+      "a": 0.738,
+      "b": -0.7025,
+      "R": 0.859,
+      "noise_RMS_over_L": 0.262,
+      "n_anchors": 10,
+      "confidence": "medium"
+    },
+    {
+      "unit": "log(p), kPa",
+      "process": "VP",
+      "transform": "identity",
+      "a": 1.0415,
+      "b": -3.4279,
+      "R": 0.979,
+      "noise_RMS_over_L": 0.157,
+      "n_anchors": 8,
+      "confidence": "medium"
+    },
+    {
+      "unit": "mol/kg",
+      "process": "AQSOL",
+      "transform": "ln",
+      "a": -0.4541,
+      "b": -9.2284,
+      "R": -0.906,
+      "noise_RMS_over_L": 0.117,
+      "n_anchors": 7,
+      "confidence": "medium"
+    },
+    {
+      "unit": "log(torr)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 2.9961,
+      "b": 11.5968,
+      "R": 0.939,
+      "noise_RMS_over_L": 0.29,
+      "n_anchors": 6,
+      "confidence": "medium"
+    }
+  ],
+  "n_high_confidence_units": 12
+}

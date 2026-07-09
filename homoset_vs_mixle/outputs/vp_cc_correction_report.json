@@ -1,0 +1,17 @@
+{
+  "n_VP_rows": 20524,
+  "n_rows_with_dHvap": 9344,
+  "coverage_pct": 45.5,
+  "vs_unifiedVP_on_correctable_molecules": {
+    "raw": {
+      "n": 759,
+      "MAE": 0.687,
+      "R": 0.848
+    },
+    "CC_corrected_to_25C": {
+      "n": 759,
+      "MAE": 0.262,
+      "R": 0.931
+    }
+  }
+}

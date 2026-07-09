@@ -1,0 +1,347 @@
+{
+  "schedule": [
+    [
+      0.25,
+      0.9
+    ],
+    [
+      0.35,
+      0.85
+    ],
+    [
+      0.45,
+      0.82
+    ],
+    [
+      0.55,
+      0.8
+    ],
+    [
+      0.65,
+      0.78
+    ],
+    [
+      0.65,
+      0.78
+    ]
+  ],
+  "trajectory": [
+    {
+      "outer": 1,
+      "eta": 0.25,
+      "r_min": 0.9,
+      "units_added": 11,
+      "units_total": 11,
+      "new_molecules": 100,
+      "total_molecules": 2775,
+      "loop_obs": 575,
+      "freesolv_n": 563,
+      "freesolv_MAE": 0.3106,
+      "freesolv_R": 0.9647
+    },
+    {
+      "outer": 2,
+      "eta": 0.35,
+      "r_min": 0.85,
+      "units_added": 3,
+      "units_total": 14,
+      "new_molecules": 116,
+      "total_molecules": 2791,
+      "loop_obs": 782,
+      "freesolv_n": 564,
+      "freesolv_MAE": 0.3172,
+      "freesolv_R": 0.9642
+    },
+    {
+      "outer": 3,
+      "eta": 0.45,
+      "r_min": 0.82,
+      "units_added": 3,
+      "units_total": 17,
+      "new_molecules": 127,
+      "total_molecules": 2802,
+      "loop_obs": 1228,
+      "freesolv_n": 564,
+      "freesolv_MAE": 0.3207,
+      "freesolv_R": 0.9641
+    },
+    {
+      "outer": 4,
+      "eta": 0.55,
+      "r_min": 0.8,
+      "units_added": 1,
+      "units_total": 18,
+      "new_molecules": 133,
+      "total_molecules": 2808,
+      "loop_obs": 1241,
+      "freesolv_n": 564,
+      "freesolv_MAE": 0.3177,
+      "freesolv_R": 0.9642
+    },
+    {
+      "outer": 5,
+      "eta": 0.65,
+      "r_min": 0.78,
+      "units_added": 1,
+      "units_total": 19,
+      "new_molecules": 135,
+      "total_molecules": 2810,
+      "loop_obs": 1324,
+      "freesolv_n": 564,
+      "freesolv_MAE": 0.3187,
+      "freesolv_R": 0.9642
+    },
+    {
+      "outer": 6,
+      "eta": 0.65,
+      "r_min": 0.78,
+      "units_added": 0,
+      "units_total": 19,
+      "new_molecules": 135,
+      "total_molecules": 2810,
+      "loop_obs": 1324,
+      "freesolv_n": 564,
+      "freesolv_MAE": 0.3187,
+      "freesolv_R": 0.9642
+    }
+  ],
+  "units_total": 19,
+  "new_molecules": 135,
+  "total_molecules": 2810,
+  "loop_observations": 1324,
+  "start_freesolv": {
+    "n": 561,
+    "MAE": 0.2989,
+    "R": 0.9645
+  },
+  "units": [
+    {
+      "unit": "ppm (mol)",
+      "process": "AQSOL",
+      "transform": "log10",
+      "a": -1.173,
+      "b": 1.7288,
+      "R": -0.8461,
+      "noise": 0.1336,
+      "n": 335,
+      "eta": 0.45,
+      "outer": 3
+    },
+    {
+      "unit": "log(mmHg)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 1.0692,
+      "b": -2.4645,
+      "R": 0.8721,
+      "noise": 0.184,
+      "n": 146,
+      "eta": 0.35,
+      "outer": 2
+    },
+    {
+      "unit": "[mf]",
+      "process": "AQSOL",
+      "transform": "ln",
+      "a": -0.9838,
+      "b": -12.262,
+      "R": -0.9524,
+      "noise": 0.045,
+      "n": 134,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "logK=y/x at 1 atm",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.3742,
+      "b": -4.4303,
+      "R": 0.9862,
+      "noise": 0.0658,
+      "n": 71,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "um Hg",
+      "process": "VP",
+      "transform": "log10",
+      "a": 1.2658,
+      "b": -6.2675,
+      "R": 0.7887,
+      "noise": 0.4537,
+      "n": 67,
+      "eta": 0.65,
+      "outer": 5
+    },
+    {
+      "unit": "MPv/(RTCw)",
+      "process": "KWG",
+      "transform": "log10",
+      "a": 1.364,
+      "b": 0.1466,
+      "R": 0.9836,
+      "noise": 0.0636,
+      "n": 66,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "log(Pa)",
+      "process": "VP",
+      "transform": "log10",
+      "a": 4.7724,
+      "b": -3.2896,
+      "R": 0.8334,
+      "noise": 0.218,
+      "n": 51,
+      "eta": 0.45,
+      "outer": 3
+    },
+    {
+      "unit": "log(atm/M)",
+      "process": "KWG",
+      "transform": "identity",
+      "a": 1.0345,
+      "b": -1.4148,
+      "R": 0.9584,
+      "noise": 0.0954,
+      "n": 24,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "mm Hg/M",
+      "process": "KWG",
+      "transform": "log10",
+      "a": 1.3864,
+      "b": -5.7548,
+      "R": 0.9993,
+      "noise": 0.0038,
+      "n": 24,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "kPa/M",
+      "process": "KWG",
+      "transform": "ln",
+      "a": 0.5924,
+      "b": -4.5975,
+      "R": 0.9946,
+      "noise": 0.0548,
+      "n": 23,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "[mf/mf]And",
+      "process": "KWG",
+      "transform": "log10",
+      "a": 1.3625,
+      "b": -6.3265,
+      "R": 0.9999,
+      "noise": 0.0061,
+      "n": 13,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "log(kPa)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 0.8134,
+      "b": -1.8787,
+      "R": 0.8306,
+      "noise": 0.34,
+      "n": 13,
+      "eta": 0.45,
+      "outer": 3
+    },
+    {
+      "unit": "microM",
+      "process": "AQSOL",
+      "transform": "identity",
+      "a": -0.0001,
+      "b": -5.5245,
+      "R": -0.912,
+      "noise": 0.0973,
+      "n": 10,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "g/100g/atm",
+      "process": "KGW",
+      "transform": "log10",
+      "a": -1.0787,
+      "b": -0.9749,
+      "R": -0.8592,
+      "noise": 0.307,
+      "n": 10,
+      "eta": 0.35,
+      "outer": 2
+    },
+    {
+      "unit": "log(p), kPa",
+      "process": "VP",
+      "transform": "identity",
+      "a": 1.2457,
+      "b": -2.4469,
+      "R": 0.9735,
+      "noise": 0.1783,
+      "n": 8,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "mol/kg",
+      "process": "AQSOL",
+      "transform": "log10",
+      "a": -1.0588,
+      "b": -9.2513,
+      "R": -0.9062,
+      "noise": 0.1188,
+      "n": 7,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "log(uM)",
+      "process": "AQSOL",
+      "transform": "identity",
+      "a": -0.0156,
+      "b": -5.5166,
+      "R": -0.9227,
+      "noise": 0.0166,
+      "n": 7,
+      "eta": 0.25,
+      "outer": 1
+    },
+    {
+      "unit": "log (Torr)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 3.7978,
+      "b": 23.9634,
+      "R": 0.811,
+      "noise": 0.3627,
+      "n": 7,
+      "eta": 0.55,
+      "outer": 4
+    },
+    {
+      "unit": "log(torr)",
+      "process": "VP",
+      "transform": "identity",
+      "a": 2.9919,
+      "b": 11.5705,
+      "R": 0.9394,
+      "noise": 0.289,
+      "n": 6,
+      "eta": 0.35,
+      "outer": 2
+    }
+  ]
+}

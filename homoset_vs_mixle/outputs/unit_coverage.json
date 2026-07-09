@@ -1,0 +1,14 @@
+{
+  "total": 53895,
+  "converted_to_dG": 38539,
+  "by_bucket": {
+    "free energy (FEOH/DGS)": 3160,
+    "Henry constant": 11582,
+    "vapour pressure \u2192 paired": 12697,
+    "solubility \u2192 paired": 11100,
+    "vapour-pressure-only (no solubility)": 7881,
+    "solubility-only (no vapour pressure)": 4654,
+    "excluded (pKa / transfer / vaporisation)": 2635,
+    "unparsed / other": 186
+  }
+}

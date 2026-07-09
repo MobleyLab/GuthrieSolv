@@ -1,0 +1,20 @@
+{
+  "paired_molecules_total": 1722,
+  "already_had_dG": 1722,
+  "NEW_molecules_from_pairing": 0,
+  "coverage_after_pairing": 2810,
+  "freesolv_all_paired": {
+    "n": 452,
+    "MAE": 0.97,
+    "R": 0.888
+  },
+  "freesolv_new_paired": {
+    "n": 0,
+    "MAE": NaN
+  },
+  "truly_unconvertible": {
+    "VP_only_molecules": 750,
+    "AQSOL_only_molecules": 1666,
+    "reason": "single observable; dG_hyd needs BOTH volatility and solubility"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "dG_from_meta37_Henry": {
+    "n_molecules_generated": 4186,
+    "calib_slope": -1.381,
+    "calib_intercept": -0.061,
+    "freesolv_fit": {
+      "n": 542,
+      "MAE": 0.363,
+      "RMSE": 0.847,
+      "R": 0.967
+    }
+  },
+  "dG_from_VPxWS_pairing": {
+    "n_molecules_generated": 2721,
+    "calib_slope": 1.3,
+    "calib_intercept": -8.728,
+    "freesolv_fit": {
+      "n": 501,
+      "MAE": 0.677,
+      "RMSE": 1.193,
+      "R": 0.925
+    }
+  },
+  "dG_total_union_molecules": 5020,
+  "overlap_with_FreeSolv": {
+    "n": 561,
+    "meta37_dG_vs_FreeSolv": {
+      "n": 561,
+      "MAE": 0.395,
+      "RMSE": 0.973,
+      "R": 0.956
+    }
+  },
+  "overlap_with_GuthrieSolv": {
+    "n": 2177,
+    "meta37_vs_GuthrieSolv_Homoset": {
+      "n": 2177,
+      "MAE": 0.89,
+      "RMSE": 1.959,
+      "R": 0.898
+    },
+    "meta37_vs_GuthrieSolv_mixle": {
+      "n": 2177,
+      "MAE": 0.791,
+      "RMSE": 1.836,
+      "R": 0.909
+    }
+  },
+  "three_way_vs_FreeSolv": {
+    "n": 545,
+    "meta37_Henry": {
+      "n": 545,
+      "MAE": 0.373,
+      "RMSE": 0.901,
+      "R": 0.963
+    },
+    "GuthrieSolv_Homoset": {
+      "n": 545,
+      "MAE": 0.205,
+      "RMSE": 0.773,
+      "R": 0.973
+    },
+    "GuthrieSolv_mixle": {
+      "n": 545,
+      "MAE": 0.186,
+      "RMSE": 0.698,
+      "R": 0.978
+    }
+  }
+}

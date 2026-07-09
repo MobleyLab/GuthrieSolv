@@ -1,0 +1,16 @@
+{
+  "GuthrieSolv_AQSOL_vs_AqSolDB": {
+    "n": 2726,
+    "MAE": 0.153,
+    "RMSE": 0.482,
+    "bias": -0.0,
+    "R": 0.98
+  },
+  "GuthrieSolv_VP_vs_unifiedVP": {
+    "n": 1582,
+    "MAE": 1.056,
+    "RMSE": 1.986,
+    "bias": 0.359,
+    "R": 0.817
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "n_guthrie_final_molecules": 662,
+  "three_way_overlap": 176,
+  "Guthrie_final": {
+    "n": 176,
+    "MAE": 0.267,
+    "RMSE": 1.121,
+    "R": 0.943
+  },
+  "ours_rule_engine": {
+    "n": 176,
+    "MAE": 0.153,
+    "RMSE": 0.51,
+    "R": 0.988
+  },
+  "trust_effect_all_overlap": {
+    "n": 543,
+    "all_obs": {
+      "n": 543,
+      "MAE": 0.195,
+      "RMSE": 0.658,
+      "R": 0.983
+    },
+    "trusted_only": {
+      "n": 543,
+      "MAE": 0.24,
+      "RMSE": 0.881,
+      "R": 0.968
+    },
+    "n_molecules_with_untrusted_obs": 596,
+    "n_untrusted_observations": 2884
+  },
+  "pH_tagged_rows": 92,
+  "pH_values": {
+    "2.0": 70,
+    "1.0": 9,
+    "7.4": 5,
+    "6.0": 3,
+    "4.2": 2,
+    "6.5": 1,
+    "3.0": 1,
+    "1.8": 1
+  }
+}
